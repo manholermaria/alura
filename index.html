@@ -22,7 +22,14 @@
     margin: 0 auto;
     padding: 24px;
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Deixa um post embaixo do outro */
+    gap: 24px;
+  }
+
+  /* Classe nova para colocar a imagem na esquerda e os textos na direita em cada post */
+  .post {
+    display: flex;
+    align-items: flex-start;
     gap: 24px;
   }
 
@@ -55,29 +62,37 @@
   </header>
   
   <main>
-  <img src="Gemini_Generated_Image_9r5bw79r5bw79r5b.png" alt="Filhote de cachorro salsicha Dachshund marrom claro">
-    
-    <div class="conteudo-texto">
-      <h2>Meu primeiro post</h2>
-      <p> 𝑷𝒐𝒓: 𝑴𝒂𝒓𝒊𝒂 𝑳𝒂𝒖𝒓𝒂</p>
-      <p>Boas-vindas ao meu blog! Aqui vou compartilhar curiosidades sobre a raça dos salsichas.</p>
-      
-      <div class="botoes-container">
-        <button type="button">❤️ <span>0</span></button>  
-        <button type="button">⭐ <span>0</span></button>   
-      </div>
+    <!-- PRIMEIRA POSTAGEM -->
+    <article class="post">
       <img src="Gemini_Generated_Image_9r5bw79r5bw79r5b.png" alt="Filhote de cachorro salsicha Dachshund marrom claro">
-    
-    <div class="conteudo-texto">
-      <h2>Meu primeiro post</h2>
-      <p> 𝑷𝒐𝒓: 𝑴𝒂𝒓𝒊𝒂 𝑳𝒂𝒖𝒓𝒂</p>
-      <p>Boas-vindas ao meu blog! Aqui vou compartilhar curiosidades sobre a raça dos salsichas.</p>
       
-      <div class="botoes-container">
-        <button type="button">❤️ <span>0</span></button>  
-        <button type="button">⭐ <span>0</span></button>   
+      <div class="conteudo-texto">
+        <h2>Meu primeiro post</h2>
+        <p> 𝑷𝒐𝒓: 𝑴𝒂𝒓𝒊𝒂 𝑳𝒂𝒖𝒓𝒂</p>
+        <p>Boas-vindas ao meu blog! Aqui vou compartilhar curiosidades sobre a raça dos salsichas.</p>
+        
+        <div class="botoes-container">
+          <button type="button">❤️ <span>0</span></button>  
+          <button type="button">⭐ <span>0</span></button>   
+        </div>
       </div>
-    </div>
+    </article>
+
+    <!-- SEGUNDA POSTAGEM -->
+    <article class="post">
+      <img src="Gemini_Generated_Image_9r5bw79r5bw79r5b.png" alt="Filhote de cachorro salsicha Dachshund marrom claro">
+      
+      <div class="conteudo-texto">
+        <h2>Meu segundo post</h2>
+        <p> 𝑷𝒐𝒓: 𝑴𝒂𝒓𝒊𝒂 𝑳𝒂𝒖𝒓𝒂</p>
+        <p>Boas-vindas ao meu blog! Aqui vou compartilhar curiosidades sobre a raça dos salsichas.</p>
+        
+        <div class="botoes-container">
+          <button type="button">❤️ <span>0</span></button>  
+          <button type="button">⭐ <span>0</span></button>   
+        </div>
+      </div>
+    </article>
   </main>
 
   <script>
@@ -94,4 +109,3 @@
   </script>
 </body>
 </html>
-
