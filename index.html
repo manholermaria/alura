@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog</title>
 <style>
-  /* 1. Definição das variáveis para o Modo Claro (padrão) */
   :root {
     --cor-fundo-body: #f4f4f4;
     --cor-fundo-bloco: #8B4513;
@@ -15,7 +14,6 @@
     --cor-botao-texto: #333333;
   }
 
-  /* 2. Definição das variáveis quando o Modo Escuro está ativo */
   body.modo-escuro {
     --cor-fundo-body: #121212;
     --cor-fundo-bloco: #2b1d0f;
@@ -44,7 +42,6 @@
     position: relative;
   }
 
-  /* Estilo do botão de alternar tema no cabeçalho */
   .btn-tema {
     margin-top: 10px;
     padding: 8px 16px;
@@ -106,7 +103,6 @@
     <h1>Minha página é sobre a raça de cachorro-𝑫𝑨𝑪𝑯𝑺𝑯𝑼𝑵𝑫</h1>
     <p>Aqui vou compartilhar curiosidades sobre a raça</p>
     
-    <!-- Botão de alternância de tema -->
     <button id="botao-tema" class="btn-tema">🌙 Modo Escuro</button>
   </header>
   
@@ -148,14 +144,12 @@
   </main>
 
   <script>
-    // 1. Lógica do Botão de Alternar Tema (Método Alura)
     const botaoTema = document.getElementById('botao-tema');
     const body = document.body;
 
     botaoTema.addEventListener('click', () => {
       body.classList.toggle('modo-escuro');
 
-      // Altera o texto do botão conforme o modo atual
       if (body.classList.contains('modo-escuro')) {
         botaoTema.textContent = '☀️ Modo Claro';
       } else {
@@ -163,7 +157,6 @@
       }
     });
 
-    // 2. Lógica dos Botões de Curtida / Estrela
     const botoesCurtida = document.querySelectorAll('.btn-curtir');
 
     botoesCurtida.forEach(function (botao) {
